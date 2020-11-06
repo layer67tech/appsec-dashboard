@@ -1,0 +1,6 @@
+CRITICAL - 2020-10-17 18:51:57 --> Call to undefined method App\Libraries\Crud::getEditTitle()
+#0 C:\laragon\www\ci4crud\system\CodeIgniter.php(918): App\Controllers\Users->edit('7')
+#1 C:\laragon\www\ci4crud\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 C:\laragon\www\ci4crud\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\laragon\www\ci4crud\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}

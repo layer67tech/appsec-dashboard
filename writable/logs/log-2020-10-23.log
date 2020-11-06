@@ -1,0 +1,12 @@
+CRITICAL - 2020-10-23 09:32:38 --> Unknown column 'u_status' in 'where clause'
+#0 C:\laragon\www\ci4crud\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT COUNT(*)...')
+#1 C:\laragon\www\ci4crud\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\laragon\www\ci4crud\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\laragon\www\ci4crud\app\Models\CrudModel.php(115): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...')
+#4 C:\laragon\www\ci4crud\app\Libraries\Crud_core.php(96): App\Models\CrudModel->countTotalRows('vulnerability_m...', Array, Object(CodeIgniter\HTTP\IncomingRequest), Array, Array)
+#5 C:\laragon\www\ci4crud\app\Controllers\Vulnerabilities.php(61): App\Libraries\Crud_core->view(1, 10, Array, Array, Array)
+#6 C:\laragon\www\ci4crud\system\CodeIgniter.php(918): App\Controllers\Vulnerabilities->index()
+#7 C:\laragon\www\ci4crud\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Vulnerabilities))
+#8 C:\laragon\www\ci4crud\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\ci4crud\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
